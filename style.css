@@ -1,0 +1,879 @@
+@charset "UTF-8";
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* tło */
+body {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+body.anime, body.manga, body.novel, body.settings {
+  background-attachment: fixed;
+  background-image: url("https://images.alphacoders.com/605/605592.jpg");
+}
+
+/* obrazek - baner */
+.hero-image-container {
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/* navbar */
+.navigation-wrapper .navigation-background {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.navigation-wrapper .navigation-list-item a,
+.navigation-wrapper .navigation-list-item button {
+  color: white;
+  background-color: transparent;
+}
+.navigation-wrapper .navigation-list-item a.is-active,
+.navigation-wrapper .navigation-list-item button.is-active {
+  border-bottom: 3px solid white;
+}
+.navigation-wrapper .navigation-list-item:hover a,
+.navigation-wrapper .navigation-list-item:hover button {
+  border-radius: 20px 0px;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: white;
+}
+.navigation-wrapper .navigation-list-item:hover a.is-active:hover,
+.navigation-wrapper .navigation-list-item:hover button.is-active:hover {
+  border-bottom-color: white;
+}
+
+/* tabele */
+.ReactTable.list-table .rt-table {
+  border: none;
+}
+.ReactTable.list-table .rt-table .rt-thead {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+}
+.ReactTable.list-table .rt-table .rt-thead .rt-th {
+  background-color: transparent;
+  border: none;
+}
+.ReactTable.list-table .rt-table .rt-thead .rt-th div {
+  background-color: transparent;
+  color: white;
+}
+.ReactTable.list-table .rt-table .rt-thead .rt-th svg.is-active {
+  color: #40c840;
+}
+.ReactTable.list-table .rt-table .list-rows {
+  background-color: transparent;
+  border: none;
+}
+.ReactTable.list-table .rt-table .list-rows.even {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.ReactTable.list-table .rt-table .list-rows.odd {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.ReactTable.list-table .rt-table .list-rows:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.ReactTable.list-table .rt-table .list-rows button {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-color: black;
+  color: white;
+}
+.ReactTable.list-table .rt-table .list-rows button:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-color: white;
+}
+.ReactTable.list-table .rt-table .list-rows button:hover svg {
+  color: white;
+}
+.ReactTable.list-table .rt-table .list-rows .dropdown-list {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-color: black;
+}
+.ReactTable.list-table .rt-table .list-rows .dropdown-list button {
+  color: white;
+}
+.ReactTable.list-table .rt-table .list-rows .dropdown-list button:hover {
+  color: white;
+}
+.ReactTable.list-table .rt-table .list-cell {
+  border: none;
+}
+.ReactTable.list-table .rt-table .list-cell div > a,
+.ReactTable.list-table .rt-table .list-cell span > a {
+  color: white;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.8);
+}
+.ReactTable.list-table .rt-table .list-cell div > a:hover,
+.ReactTable.list-table .rt-table .list-cell span > a:hover {
+  color: white;
+  font-weight: bold;
+}
+.ReactTable.list-table .rt-table .list-cell div > span,
+.ReactTable.list-table .rt-table .list-cell div > div {
+  color: white;
+}
+.ReactTable.list-table .rt-table .list-cell .__react_component_tooltip {
+  border-color: white;
+}
+.ReactTable.list-table .rt-table .list-cell .__react_component_tooltip .react-tooltip {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+.ReactTable.list-table .rt-table .list-cell .__react_component_tooltip::after {
+  border-bottom-color: white;
+}
+.ReactTable.list-table .rt-table .row-empty {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+}
+.ReactTable.list-table p.no-data-children {
+  color: white;
+}
+
+/* doładowywanie */
+#dots {
+  fill: white;
+}
+
+/* okna pop-up */
+.modal-wrapper .modal-inner {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-color: white;
+}
+.modal-wrapper .modal-header {
+  border-color: white;
+}
+.modal-wrapper .modal-header h4 {
+  color: white;
+}
+.modal-wrapper div.title-wrapper h4[class^=jsx] {
+  color: white;
+}
+.modal-wrapper h5 > span[class^=jsx] {
+  color: white;
+}
+.modal-wrapper h5 > span[class^=jsx] a {
+  color: white;
+}
+.modal-wrapper h5 > span[class^=jsx] a:hover {
+  color: white;
+  -webkit-text-decoration: underline white;
+          text-decoration: underline white;
+}
+.modal-wrapper span,
+.modal-wrapper p {
+  color: white;
+}
+.modal-wrapper div.input-wrapper {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-wrapper div.input-wrapper .input-icon svg,
+.modal-wrapper div.input-wrapper .input-placeholder {
+  color: white;
+}
+.modal-wrapper div.input-wrapper .input-element {
+  border-color: white;
+  color: white;
+}
+.modal-wrapper .MuiRating-root .MuiRating-iconEmpty {
+  color: rgba(255, 255, 255, 0.25);
+}
+.modal-wrapper .MuiRating-root .MuiRating-iconFilled {
+  color: goldenrod;
+}
+.modal-wrapper .dropdown-wrapper .custom-dropdown .custom-dropdown-control {
+  border-color: rgba(255, 255, 255, 0.25);
+}
+.modal-wrapper .textarea-wrapper textarea {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-color: white;
+  color: white;
+}
+.modal-wrapper div .checkbox-label::before {
+  border-color: white;
+  background-color: black;
+}
+.modal-wrapper div .checkbox-label::after {
+  border-color: white;
+}
+.modal-wrapper div .checkbox-label .checkbox-label-text {
+  color: white;
+}
+.modal-wrapper .modal-content .modal-customList-box a {
+  color: white;
+}
+.modal-wrapper .modal-content .modal-customList-box a:hover {
+  font-weight: bold;
+}
+.modal-wrapper .modal-content .modal-customList-box a:hover span {
+  color: white !important;
+}
+.modal-wrapper .modal-content .modal-customList-box a svg {
+  color: white;
+}
+.modal-wrapper .modal-close {
+  background: none;
+}
+.modal-wrapper .modal-close svg {
+  color: rgba(255, 255, 255, 0.25);
+}
+.modal-wrapper .modal-close:hover svg {
+  color: white;
+}
+.modal-wrapper .modal-footer :first-child {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-color: #e0421a;
+  color: #e0421a;
+}
+.modal-wrapper .modal-footer :first-child:hover {
+  background-color: #e0421a;
+  border-color: black;
+  color: black;
+  font-weight: bolder;
+}
+.modal-wrapper .modal-footer :last-child {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-color: #40c840;
+  color: #40c840;
+}
+.modal-wrapper .modal-footer :last-child:hover {
+  background-color: #40c840;
+  border-color: black;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: bolder;
+}
+
+/* boczne menu */
+.dropdown-wrapper .custom-dropdown .custom-dropdown-control {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-color: black;
+  color: white;
+}
+.dropdown-wrapper .custom-dropdown .custom-dropdown-control svg,
+.dropdown-wrapper .custom-dropdown .custom-dropdown-control [class^=css],
+.dropdown-wrapper .custom-dropdown .custom-dropdown-control [class$=singleValue],
+.dropdown-wrapper .custom-dropdown .custom-dropdown-control [class$=placeholder] {
+  color: white;
+}
+.dropdown-wrapper .custom-dropdown .custom-dropdown-control [class$=indicatorSeparator] {
+  background-color: white;
+}
+.dropdown-wrapper .custom-dropdown .custom-dropdown-control:hover {
+  border-color: white;
+}
+.dropdown-wrapper .custom-dropdown .custom-dropdown-control:hover svg,
+.dropdown-wrapper .custom-dropdown .custom-dropdown-control:hover [class$=singleValue],
+.dropdown-wrapper .custom-dropdown .custom-dropdown-control:hover [class$=placeholder] {
+  color: white;
+  font-weight: bold;
+}
+.dropdown-wrapper .custom-dropdown .custom-dropdown-control:hover [class$=indicatorSeparator] {
+  background-color: white;
+}
+.dropdown-wrapper .custom-dropdown .custom-dropdown-control [class$=multiValue] {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.dropdown-wrapper .custom-dropdown .custom-dropdown-control [class$=multiValue] div {
+  background-color: transparent;
+  color: white;
+}
+.dropdown-wrapper .custom-dropdown .custom-dropdown-control [class$=multiValue] div :hover {
+  background-color: #e0421a;
+  border-radius: 3px;
+}
+.dropdown-wrapper .custom-dropdown [class$=menu] {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.dropdown-wrapper .custom-dropdown [class$=menu] .dropdown-option-label,
+.dropdown-wrapper .custom-dropdown [class$=menu] .dropdown-option-icons path {
+  color: white;
+}
+.dropdown-wrapper .custom-dropdown [class$=menu] [class$=option] {
+  background-color: transparent;
+}
+.dropdown-wrapper .custom-dropdown [class$=menu] [class$=option]:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: white;
+  font-weight: bold;
+}
+.dropdown-wrapper .custom-dropdown [class$=menu] [class$=option]:hover .dropdown-option-label,
+.dropdown-wrapper .custom-dropdown [class$=menu] [class$=option]:hover .dropdown-option-icons path {
+  color: white;
+}
+.dropdown-wrapper .custom-dropdown [class$=menu] [class$=option] [class$=active].dropdown-option-label, .dropdown-wrapper .custom-dropdown [class$=menu] [class$=option] [class$=active].dropdown-option-icons path {
+  font-weight: bold;
+  -webkit-text-decoration: underline white;
+          text-decoration: underline white;
+}
+.dropdown-wrapper .custom-dropdown [class*=css][class*=menu] {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.dropdown-wrapper .custom-dropdown [class*=css][class*=menu] div div {
+  color: white;
+}
+
+.columns-wrapper .sidebar-wrapper {
+  border-radius: 20px 0px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.sidebar-wrapper .sidebar-input .input-wrapper {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.sidebar-wrapper .sidebar-input .input-wrapper .input-icon svg,
+.sidebar-wrapper .sidebar-input .input-wrapper .input-placeholder {
+  color: white;
+}
+.sidebar-wrapper .sidebar-input .input-wrapper .input-element {
+  border-color: black;
+  color: white;
+}
+
+.columns-wrapper .sidebar-wrapper .sidebar-group [class*=jsx-] {
+  color: white;
+}
+.columns-wrapper .sidebar-wrapper .sidebar-group [class*=jsx-]::before {
+  background-color: white;
+}
+
+.columns-wrapper .sidebar-wrapper .sidebar-group .sidebar-list-wrapper .sidebar-list-item {
+  border-radius: 20px 0px;
+}
+.columns-wrapper .sidebar-wrapper .sidebar-group .sidebar-list-wrapper .sidebar-list-item .sidebar-list-title,
+.columns-wrapper .sidebar-wrapper .sidebar-group .sidebar-list-wrapper .sidebar-list-item .sidebar-list-counter {
+  color: white;
+}
+.columns-wrapper .sidebar-wrapper .sidebar-group .sidebar-list-wrapper .sidebar-list-item .sidebar-list-title .sidebar-icon-wrapper,
+.columns-wrapper .sidebar-wrapper .sidebar-group .sidebar-list-wrapper .sidebar-list-item .sidebar-list-counter .sidebar-icon-wrapper {
+  color: white;
+}
+.columns-wrapper .sidebar-wrapper .sidebar-group .sidebar-list-wrapper .sidebar-list-item:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.columns-wrapper .sidebar-wrapper .sidebar-group .sidebar-list-wrapper .sidebar-list-item:hover .sidebar-list-title,
+.columns-wrapper .sidebar-wrapper .sidebar-group .sidebar-list-wrapper .sidebar-list-item:hover .sidebar-list-counter {
+  color: white;
+  font-weight: bold;
+}
+.columns-wrapper .sidebar-wrapper .sidebar-group .sidebar-list-wrapper .sidebar-list-item:hover .sidebar-list-title .sidebar-icon-wrapper,
+.columns-wrapper .sidebar-wrapper .sidebar-group .sidebar-list-wrapper .sidebar-list-item:hover .sidebar-list-counter .sidebar-icon-wrapper {
+  color: white;
+}
+.columns-wrapper .sidebar-wrapper .sidebar-group .sidebar-list-wrapper .sidebar-list-item .is-active {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-color: black;
+}
+.columns-wrapper .sidebar-wrapper .sidebar-group .sidebar-list-wrapper .sidebar-list-item .is-active:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.columns-wrapper .sidebar-wrapper .sidebar-group .sidebar-list-wrapper .sidebar-list-item .is-active:hover .sidebar-list-title,
+.columns-wrapper .sidebar-wrapper .sidebar-group .sidebar-list-wrapper .sidebar-list-item .is-active:hover .sidebar-list-counter {
+  color: white;
+  font-weight: bold;
+}
+.columns-wrapper .sidebar-wrapper .sidebar-group .sidebar-list-wrapper .sidebar-list-item .is-active:hover .sidebar-list-title .sidebar-icon-wrapper,
+.columns-wrapper .sidebar-wrapper .sidebar-group .sidebar-list-wrapper .sidebar-list-item .is-active:hover .sidebar-list-counter .sidebar-icon-wrapper {
+  color: white;
+}
+
+.accordion-wrapper .MuiAccordion-root .MuiAccordionSummary-root .MuiAccordionSummary-content {
+  color: white;
+}
+.accordion-wrapper .MuiAccordion-root .sidebar-customList-link:hover {
+  border-radius: 20px 0px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.accordion-wrapper .MuiAccordion-root .sidebar-customList-link:hover .sidebar-customList-name,
+.accordion-wrapper .MuiAccordion-root .sidebar-customList-link:hover .sidebar-customList-content,
+.accordion-wrapper .MuiAccordion-root .sidebar-customList-link:hover .sidebar-customList-count {
+  color: white;
+  font-weight: bold;
+}
+.accordion-wrapper .MuiAccordion-root .sidebar-customList-link.active {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-color: black;
+}
+.accordion-wrapper .MuiAccordion-root .sidebar-customList-link.active .sidebar-customList-name,
+.accordion-wrapper .MuiAccordion-root .sidebar-customList-link.active .sidebar-customList-content,
+.accordion-wrapper .MuiAccordion-root .sidebar-customList-link.active .sidebar-customList-count {
+  color: white;
+}
+.accordion-wrapper .MuiAccordion-root .sidebar-customList-link.active:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.accordion-wrapper .MuiAccordion-root .sidebar-customList-link.active:hover .sidebar-customList-name,
+.accordion-wrapper .MuiAccordion-root .sidebar-customList-link.active:hover .sidebar-customList-content,
+.accordion-wrapper .MuiAccordion-root .sidebar-customList-link.active:hover .sidebar-customList-count {
+  color: white;
+  font-weight: bold;
+}
+.accordion-wrapper .MuiAccordion-root .customListManageLink-link {
+  border-radius: 20px 0px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 7px 10px;
+}
+.accordion-wrapper .MuiAccordion-root .customListManageLink-link:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: white;
+}
+.accordion-wrapper .MuiAccordion-root .customListManageLink-link:hover span.customListManageLink-text {
+  color: white;
+}
+.accordion-wrapper .MuiAccordion-root .customListManageLink-link .customListManageLink-text {
+  color: white;
+}
+
+.columns-wrapper .sidebar-wrapper .sidebar-group .checkbox-label::before {
+  border-color: white;
+  background-color: black;
+}
+.columns-wrapper .sidebar-wrapper .sidebar-group .checkbox-label::after {
+  border-color: white;
+}
+.columns-wrapper .sidebar-wrapper .sidebar-group .checkbox-label .checkbox-label-text {
+  color: white;
+}
+
+.dropdown-wrapper .custom-async-dropdown div.custom-dropdown-control {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-color: black;
+}
+.dropdown-wrapper .custom-async-dropdown div.custom-dropdown-control svg,
+.dropdown-wrapper .custom-async-dropdown div.custom-dropdown-control [class^=css],
+.dropdown-wrapper .custom-async-dropdown div.custom-dropdown-control [class$=placeholder] {
+  color: white;
+}
+.dropdown-wrapper .custom-async-dropdown div.custom-dropdown-control [class$=indicatorSeparator] {
+  background-color: white;
+}
+.dropdown-wrapper .custom-async-dropdown div.custom-dropdown-control:hover {
+  border-color: white;
+}
+.dropdown-wrapper .custom-async-dropdown div.custom-dropdown-control:hover svg,
+.dropdown-wrapper .custom-async-dropdown div.custom-dropdown-control:hover [class$=placeholder] {
+  color: white;
+  font-weight: bold;
+}
+.dropdown-wrapper .custom-async-dropdown div.custom-dropdown-control:hover [class$=indicatorSeparator] {
+  background-color: white;
+}
+.dropdown-wrapper .custom-async-dropdown div.custom-dropdown-control [class$=multiValue] {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.dropdown-wrapper .custom-async-dropdown div.custom-dropdown-control [class$=multiValue] div {
+  background-color: transparent;
+  color: white;
+}
+.dropdown-wrapper .custom-async-dropdown div.custom-dropdown-control [class$=multiValue] div :hover {
+  background-color: #e0421a;
+  border-radius: 3px;
+}
+.dropdown-wrapper .custom-async-dropdown [class*=css][class*=menu] {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.dropdown-wrapper .custom-async-dropdown [class*=css][class*=menu] div div {
+  color: white;
+}
+.dropdown-wrapper .custom-async-dropdown [class*=css][class*=menu] [class*=css-][class*=-option] {
+  background-color: transparent;
+}
+.dropdown-wrapper .custom-async-dropdown [class*=css][class*=menu] [class*=css-][class*=-option] .dropdown-option-label {
+  color: white;
+}
+.dropdown-wrapper .custom-async-dropdown [class*=css][class*=menu] [class*=css-][class*=-option]:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: white;
+  font-weight: bold;
+}
+
+.sidebar-wrapper .sidebar-group .advanced-tags-btn {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-color: black;
+  color: white;
+}
+.sidebar-wrapper .sidebar-group .advanced-tags-btn:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.sidebar-wrapper .sidebar-group .premiere-dates-wrapper {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-color: black;
+  color: white;
+}
+.sidebar-wrapper .sidebar-group .premiere-dates-wrapper span {
+  color: white;
+}
+.sidebar-wrapper .sidebar-group .premiere-dates-wrapper .premiere-dates-close {
+  color: white;
+}
+.sidebar-wrapper .sidebar-group .premiere-dates-wrapper .premiere-dates-close :hover {
+  background-color: #e0421a;
+  border-radius: 3px;
+}
+
+.custom-slider-wrapper .MuiSlider-thumb {
+  background-color: white;
+  border-color: black;
+}
+.custom-slider-wrapper .MuiSlider-thumb .MuiSlider-valueLabel span {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.custom-slider-wrapper .MuiSlider-rail {
+  color: #e0421a;
+}
+.custom-slider-wrapper .MuiSlider-track {
+  color: #40c840;
+}
+
+.premiereManualChanger-wrapper p {
+  color: white;
+}
+.premiereManualChanger-wrapper p:hover {
+  font-weight: bold;
+}
+.premiereManualChanger-wrapper .premiereManualChanger-date .input-wrapper {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.premiereManualChanger-wrapper .premiereManualChanger-date .input-wrapper input {
+  color: white;
+  border-color: black;
+}
+.premiereManualChanger-wrapper .premiereManualChanger-date .input-wrapper:hover input {
+  font-weight: bold;
+  border-color: white;
+}
+.premiereManualChanger-wrapper .premiereManualChanger-date .input-wrapper .input-placeholder {
+  color: white;
+}
+
+/* listay anime, mang, nowelek */
+.wrapper-container .columns-wrapper .view-content-wrapper {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-color: black;
+}
+.wrapper-container .columns-wrapper .view-content-wrapper .view-content-header h3 {
+  color: white;
+  font-size: larger;
+}
+
+.view-content-header .view-changer-wrapper button {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-color: black;
+}
+.view-content-header .view-changer-wrapper button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.view-content-header .view-changer-wrapper button:hover svg {
+  color: white;
+}
+.view-content-header .view-changer-wrapper button.is-active {
+  background-color: white;
+}
+.view-content-header .view-changer-wrapper button.is-active svg {
+  color: rgba(0, 0, 0, 0.8);
+}
+.view-content-header .view-changer-wrapper button.is-active:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.view-content-header .view-changer-wrapper button.is-active:hover svg {
+  color: white;
+}
+
+.view-content-header .view-content-header-options button {
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+.view-content-header .view-content-header-options button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: bold;
+}
+.view-content-header .view-content-header-options button svg {
+  color: white;
+}
+
+.view-content-header .view-content-stats-wrapper h5,
+.view-content-header .view-content-stats-wrapper li > span {
+  color: white;
+  text-shadow: 5px 5px 5px black;
+}
+
+.columns-wrapper .view-content-wrapper .rowTitleInfo-inner {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.columns-wrapper .view-content-wrapper .rowTitleInfo-inner div > p,
+.columns-wrapper .view-content-wrapper .rowTitleInfo-inner li > span,
+.columns-wrapper .view-content-wrapper .rowTitleInfo-inner div > div {
+  color: white;
+}
+
+.tiles-wrapper .cell-tile-wrapper .cell-tile-link .cell-tile-info .cell-tile-title:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.tiles-wrapper .cell-tile-wrapper .cell-options-wrapper button {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-color: black;
+  color: white;
+}
+.tiles-wrapper .cell-tile-wrapper .cell-options-wrapper button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: white;
+}
+.tiles-wrapper .cell-tile-wrapper .cell-options-wrapper button:hover svg {
+  color: white;
+}
+.tiles-wrapper .cell-tile-wrapper .cell-options-wrapper .dropdown-list {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-color: white;
+}
+.tiles-wrapper .cell-tile-wrapper .cell-options-wrapper .dropdown-list button {
+  color: white;
+}
+.tiles-wrapper .cell-tile-wrapper .cell-options-wrapper .dropdown-list button:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: white;
+}
+.tiles-wrapper .cell-tile-wrapper .cell-options-wrapper .__react_component_tooltip::after {
+  border-bottom-color: white;
+}
+
+.settings .wrapper-container .settingsContent-wrapper {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-color: black;
+}
+.settings .wrapper-container .settingsContent-wrapper .settingsContent-header h3 {
+  color: white;
+}
+
+.settings .settingsContent-wrapper .input-wrapper {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.settings .settingsContent-wrapper .input-wrapper input {
+  border-color: white;
+  color: white;
+}
+.settings .settingsContent-wrapper .input-wrapper .input-icon svg,
+.settings .settingsContent-wrapper .input-wrapper .input-placeholder {
+  color: white;
+}
+.settings .settingsContent-wrapper .input-wrapper.disabled {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.settings .settingsContent-wrapper .input-wrapper.disabled .input-icon svg,
+.settings .settingsContent-wrapper .input-wrapper.disabled .input-placeholder {
+  color: black;
+}
+
+.settings .settingsContent-wrapper .checkbox-label::before {
+  border-color: white;
+  background-color: black;
+}
+.settings .settingsContent-wrapper .checkbox-label::after {
+  border-color: white;
+}
+.settings .settingsContent-wrapper .checkbox-label .checkbox-label-text {
+  color: white;
+}
+
+.customLists-button .button-wrapper button,
+.importMal-wrapper .button-wrapper button {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-color: black;
+  color: white;
+}
+.customLists-button .button-wrapper button:hover,
+.importMal-wrapper .button-wrapper button:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.settingsContent-wrapper div .title-wrapper h4[class^=jsx] {
+  color: white;
+}
+.settingsContent-wrapper .custom-dropdown .custom-dropdown-control {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-color: black;
+  color: white;
+}
+.settingsContent-wrapper .custom-dropdown .custom-dropdown-control svg,
+.settingsContent-wrapper .custom-dropdown .custom-dropdown-control [class^=css],
+.settingsContent-wrapper .custom-dropdown .custom-dropdown-control [class$=singleValue],
+.settingsContent-wrapper .custom-dropdown .custom-dropdown-control [class$=placeholder] {
+  color: white;
+}
+.settingsContent-wrapper .custom-dropdown .custom-dropdown-control [class$=indicatorSeparator] {
+  background-color: white;
+}
+.settingsContent-wrapper .custom-dropdown .custom-dropdown-control:hover {
+  border-color: white;
+}
+.settingsContent-wrapper .custom-dropdown .custom-dropdown-control:hover svg,
+.settingsContent-wrapper .custom-dropdown .custom-dropdown-control:hover [class$=singleValue],
+.settingsContent-wrapper .custom-dropdown .custom-dropdown-control:hover [class$=placeholder] {
+  color: white;
+  font-weight: bold;
+}
+.settingsContent-wrapper .custom-dropdown .custom-dropdown-control:hover [class$=indicatorSeparator] {
+  background-color: white;
+}
+.settingsContent-wrapper .custom-dropdown .custom-dropdown-control [class$=multiValue] {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.settingsContent-wrapper .custom-dropdown .custom-dropdown-control [class$=multiValue] div {
+  background-color: transparent;
+  color: white;
+}
+.settingsContent-wrapper .custom-dropdown .custom-dropdown-control [class$=multiValue] div :hover {
+  background-color: #e0421a;
+  border-radius: 3px;
+}
+.settingsContent-wrapper .custom-dropdown [class$=menu] {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.settingsContent-wrapper .custom-dropdown [class$=menu] .dropdown-option-label,
+.settingsContent-wrapper .custom-dropdown [class$=menu] .dropdown-option-icons path {
+  color: white;
+}
+.settingsContent-wrapper .custom-dropdown [class$=menu] [class$=option] {
+  background-color: transparent;
+}
+.settingsContent-wrapper .custom-dropdown [class$=menu] [class$=option]:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: white;
+  font-weight: bold;
+}
+.settingsContent-wrapper .custom-dropdown [class$=menu] [class$=option]:hover .dropdown-option-label,
+.settingsContent-wrapper .custom-dropdown [class$=menu] [class$=option]:hover .dropdown-option-icons path {
+  color: white;
+}
+.settingsContent-wrapper .custom-dropdown [class$=menu] [class$=option] [class$=active].dropdown-option-label, .settingsContent-wrapper .custom-dropdown [class$=menu] [class$=option] [class$=active].dropdown-option-icons path {
+  font-weight: bold;
+  -webkit-text-decoration: underline white;
+          text-decoration: underline white;
+}
+.settingsContent-wrapper .custom-dropdown [class*=css][class*=menu] {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.settingsContent-wrapper .custom-dropdown [class*=css][class*=menu] div div {
+  color: white;
+}
+.settingsContent-wrapper div.description-box {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-color: black;
+  color: white;
+}
+.settingsContent-wrapper .radio-label {
+  border-color: black;
+}
+.settingsContent-wrapper .radio-label::before, .settingsContent-wrapper .radio-label::after {
+  border-color: black;
+}
+.settingsContent-wrapper .radio-label::after {
+  background-color: black;
+}
+.settingsContent-wrapper .radio-label span {
+  color: white;
+}
+.settingsContent-wrapper .music-box-input .music-box-error {
+  color: #e0421a;
+}
+.settingsContent-wrapper .music-box-volume p {
+  color: white;
+}
+.settingsContent-wrapper .music-box-volume .MuiSlider-thumb {
+  background-color: white;
+  border-color: black;
+}
+.settingsContent-wrapper .music-box-volume .MuiSlider-thumb .MuiSlider-valueLabel span {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.settingsContent-wrapper .music-box-volume .MuiSlider-rail {
+  color: white;
+}
+.settingsContent-wrapper .music-box-volume .MuiSlider-track {
+  color: white;
+}
+
+.tab-wrapper .tab-header .tab-title {
+  border-color: white;
+  border-radius: 0px 0px 0px 0px;
+  border-style: none none solid none;
+  color: white;
+}
+.tab-wrapper .tab-header .tab-title:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: white;
+  font-weight: bold;
+}
+.tab-wrapper .tab-header .tab-title.active {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-bottom-style: none;
+  border-color: white;
+  color: white;
+}
+.tab-wrapper .tab-header .tab-title.active:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.tab-wrapper .tab-content .descriptionLine-text {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+.tab-wrapper .MuiSlider-root .MuiSlider-thumb {
+  background-color: white;
+  border-color: black;
+}
+.tab-wrapper .MuiSlider-root .MuiSlider-thumb .MuiSlider-valueLabel span {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.tab-wrapper .MuiSlider-root .MuiSlider-rail {
+  color: white;
+}
+.tab-wrapper .MuiSlider-root .MuiSlider-track {
+  color: white;
+}
+
+.importMal-dropzone .custom-dropzone {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.importMal-dropzone .custom-dropzone .MuiDropzoneArea-textContainer p,
+.importMal-dropzone .custom-dropzone .MuiDropzoneArea-textContainer svg {
+  color: white;
+}
+
+.settings [class*=-footer] div:first-child .button {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-color: #40c840;
+  color: #40c840;
+}
+.settings [class*=-footer] div:first-child .button:hover {
+  background-color: #40c840;
+  border-color: black;
+  color: black;
+}
+.settings [class*=-footer] div:last-child .button {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-color: #e0421a;
+  color: #e0421a;
+}
+.settings [class*=-footer] div:last-child .button:hover {
+  background-color: #e0421a;
+  border-color: black;
+  color: black;
+}/*# sourceMappingURL=style.css.map */
